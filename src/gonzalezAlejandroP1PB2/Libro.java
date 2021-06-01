@@ -2,16 +2,25 @@ package gonzalezAlejandroP1PB2;
 
 public abstract class Libro {
     
-    private Integer código;
+    private Integer codigo;
     private String nombre; 
     private String autor;
+    private Boolean prestado; 
     
     
-    public Integer getCódigo() {
-        return código;
+    
+    public Boolean getPrestado() {
+        return prestado;
     }
-    public void setCódigo(Integer código) {
-        this.código = código;
+    
+    public void setPrestado(Boolean prestado) {
+        this.prestado = prestado;
+    }
+    public Integer getCodigo() {
+        return codigo;
+    }
+    public void setCodigo(Integer codigo) {
+        this.codigo = codigo;
     }
     public String getNombre() {
         return nombre;
