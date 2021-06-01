@@ -1,5 +1,6 @@
 package gonzalezAlejandroP1PB2;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
@@ -8,25 +9,25 @@ public class bibliotecaTest {
     
     @Test
     public void queSepuedaCrearUnLibroDeHistoria(){
-	LibroHistoria historia = new LibroHistoria();
+	LibroHistoria historia = new LibroHistoria(1, "historia 1", "Autor de historia");
 	assertNotNull(historia);
     }
     
     @Test
     public void queSepuedaCrearUnLibroDeGeografia(){
-	LibroGeografia geografia = new LibroGeografia();
+	LibroGeografia geografia = new LibroGeografia(2, "geografia 1", "Autor de geografia");
 	assertNotNull(geografia);
     }
     
     @Test
     public void queSepuedaCrearUnLibroDeMatematica(){
-	LibroMatematica matematica = new LibroMatematica();
+	LibroMatematica matematica = new LibroMatematica(3, "matematica 1", "Autor de matematica");
 	assertNotNull(matematica);
     }
     
     @Test
     public void queSePuedaCrearUnaBiblioteca(){
-	Biblioteca biblioteca = new Biblioteca();
+	Biblioteca biblioteca = new Biblioteca("UNLaM");
 	assertNotNull(biblioteca);
     }
     
@@ -40,10 +41,26 @@ public class bibliotecaTest {
     @Test
     public void queSePuedaAgregarYVerUnLibro(){
 	
+	LibroHistoria historia = new LibroHistoria(1, "historia 1", "Autor de historia");
+	LibroGeografia geografia = new LibroGeografia(2, "geografia 1", "Autor de geografia");
+	LibroMatematica matematica = new LibroMatematica(3, "matematica 1", "Autor de matematica");
+	Biblioteca biblioteca = new Biblioteca("UNLaM");
+	
+	biblioteca.agregarLibro(historia);
+	biblioteca.agregarLibro(geografia);
+	biblioteca.agregarLibro(matematica);
+	
+	assertNotNull(biblioteca);
+	assertNotNull(historia);
+	assertNotNull(geografia);
+	assertNotNull(matematica);
+	
+	assertEquals(3,biblioteca.cantidadDeLibros());
     }
     
     @Test
     public void queSePuedaPrestarUnLibro(){
+	
 	
     }
     
