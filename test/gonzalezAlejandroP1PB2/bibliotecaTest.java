@@ -171,6 +171,7 @@ public class bibliotecaTest {
 
 	biblioteca.agregarLibro(historia);
 
+	assertTrue(biblioteca.prestarLibro(historia, estudiante));
 	assertTrue(historia.getPrestado());
 	//No me dio el tiempo
 	//Tendria que recorrer la lista de prestamos para recuperar el que en ese libro sea el prestado, que este en estado prestado y devolver ese estudiante
