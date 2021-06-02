@@ -84,4 +84,20 @@ public class Biblioteca {
 	return prestamos.size();
     }
 
+    public ArrayList<String> imprimirLibros() {
+	ArrayList<String> librosAImprimir = new ArrayList<String>();
+	
+	for (Libro libro : this.libros) {
+	    if(libro.clase() == "geografia" || libro.clase() == "Historia") {
+		//No me dio el tiempo de corregirlo, no funciona porque no todos los libros tienen el metodo imprimir
+		//librosAImprimir.add(libro.imprimir());
+	    }
+	}
+
+	
+	return librosAImprimir;
+    }
+
+
+
 }

@@ -40,6 +40,8 @@ public abstract class Libro {
     public void setAutor(String autor) {
         this.autor = autor;
     }
+    
+    public abstract String clase();
 
     
 

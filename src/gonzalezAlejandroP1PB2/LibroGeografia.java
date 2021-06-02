@@ -13,4 +13,10 @@ public class LibroGeografia extends Libro implements Fotocopiable {
 		+ getNombre() + ", Autor=" + getAutor() + ", Prestado=" + getPrestado() + "]";
     }
 
+    
+    @Override
+    public String clase() {
+	// TODO Auto-generated method stub
+	return "Geografia";
+    }
 }

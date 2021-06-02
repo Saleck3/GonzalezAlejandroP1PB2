@@ -12,5 +12,10 @@ public class LibroMatematica extends Libro implements Fotocopiable {
 	return "LibroMatematica [Código=" + getCodigo() + ", Nombre=" + getNombre() + ", Autor=" + getAutor()
 		+ ", Prestado=" + getPrestado() + "]";
     }
-
+    
+    @Override
+    public String clase() {
+	// TODO Auto-generated method stub
+	return "Matematica";
+    }
 }

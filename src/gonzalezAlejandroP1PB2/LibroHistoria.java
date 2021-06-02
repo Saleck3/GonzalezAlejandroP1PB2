@@ -7,4 +7,10 @@ public class LibroHistoria extends Libro {
 	// TODO Auto-generated constructor stub
     }
 
+    @Override
+    public String clase() {
+	// TODO Auto-generated method stub
+	return "Historia";
+    }
+
 }
