@@ -24,4 +24,20 @@ public class Prestamo {
 	return Boolean.FALSE;
 
     }
+
+    public Libro getLibro() {
+        return libro;
+    }
+
+    public Estudiante getEstudiante() {
+        return estudiante;
+    }
+
+    public Integer getIdentificador() {
+        return identificador;
+    }
+
+    public Boolean getDevuelto() {
+        return devuelto;
+    }
 }
